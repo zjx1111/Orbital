@@ -25,7 +25,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 <script src="js/jquery.flexslider.js"></script>
 		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 			<script>
-			// Can also be used with $(document).ready()
+			
 				$(window).load(function() {
 				$('.flexslider').flexslider({
 				animation: "slide",
@@ -41,16 +41,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="header-section">
 			<div class="container">
 				<div class="head-top">
-				<!-- <div class="social-icon">
-						<a href="#"><i class="icon"></i></a>
-						<a href="#"><i class="icon1"></i></a>
-						<a href="#"><i class="icon2"></i></a>
-						<a href="#"><i class="icon3"></i></a>
-						<a href="#"><i class="icon4"></i></a>
-					</div> -->
+				
 					<div class="email">
 					<ul>
-						<!--<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>Email: <a href="mailto:info@example.com">info@example.com</a> </li> -->
+						
 						<li><i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
 						<li><i class="glyphicon glyphicon-lock" aria-hidden="true"></i><a href="#" data-toggle="modal" data-target="#myModal1">Register as Tenant</a></li>
 						<li><i class="glyphicon glyphicon-lock" aria-hidden="true"></i><a href="#" data-toggle="modal" data-target="#myModal2">Register as Landlord</a></li>
@@ -79,16 +73,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages<span class="caret"></span></a>
 										<ul class="dropdown-menu">
-											<!--<li><a href="about.html">About</a></li>
-											<li><a href="services.html">Services</a></li>
-											<li><a href="agents.html">Agents</a></li> -->
+											
 											<li><a href="forrent.html">For Rent</a></li>
-											<!--<li><a href="forsale.html">For Sale</a></li>
-											<li><a href="pricing.html">Pricing</a></li>
-											<li><a href="faqs.html">FAQs</a></li> -->
+											
 											<li><a href="idxpress.html">IDXpress</a></li>
-											<!--<li><a href="terms.html">Terms of Use</a></li>
-											<li><a href="privacy.html">Privacy Policy</a></li>-->
+											
 										</ul>
 								</li>
 								<li class="dropdown ">
@@ -96,24 +85,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<ul class="dropdown-menu">
 											<li><a href="defaultvariation.html">Default – Variation</a></li>
 											<li><a href="agentinsidebarvariation.html">Agent in Sidebar - Variation</a></li>
-											<!--<li><a href="galleryvariation.html">Gallery - Variation</a></li> -->
+											
 										</ul>
 								</li>
-								<!--<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery <span class="caret"></span></a>
-										<ul class="dropdown-menu">
-											<li><a href="2columnsgallery.html">2 Columns Gallery</a></li>
-											<li><a href="3columnsgallery.html">3 Columns Gallery</a></li>
-											<li><a href="4columnsgallery.html">4 Columns Gallery</a></li>
-										</ul>
-								</li> -->
-							<!--<li><a href="blog.html">Blog</a></li>-->
-							<!--<li><a href="codes.html">Codes</a></li> -->
-							<!--<li><a href="contact.html">Contact</a></li>-->
+								
 						</ul>
-						<!-- <div class="phone">
-						<span><i class="glyphicon glyphicon-phone" aria-hidden="true"></i>1-999-4563-555</span>
-						</div> -->
+						
 						<div class="clearfix"></div>
 					</div>
 				</nav>
@@ -269,9 +246,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</select>
 							</div>
 							<div class="yourplace">
-								<h5>Near Train Stations</h5>
+								<h5>Near MRT Stations</h5>
 								<select class="sel2">
-									<option value="">All Stations</option>
+									<option value="">any</option>
 									<option value="">Kent Ridge MRT</option>
 									<option value="">Clementi MRT</option>
 									<option value="">Dover MRT</option>
@@ -287,7 +264,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<option value="">Landed</option>
 								</select>
 							</div>
-							<div class="yourplace"><h5>Price per month</h5>
+							<div class="yourplace">
+								<h5>Price per month</h5>
 									<select class="sel2">
 										<option value="">any</option>
 										<option value="">$500-$750</option>
@@ -299,15 +277,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</select>
 								
 							</div>
-							<div class="yourplace">
-									<h5>Size</h5>
-									<select class="sel2">
-										<option value="">All Size</option>
-										<option value=""><20 sqm</option>
-										<option value="">20-30 sqm</option>
-										<option value="">30-40 sqm</option>
-										<option value="">>40 sqm</option>
-									</select>
+								<div class="yourplace-grids">
+									<div class="col-md-6 yourplace-grid">
+										<h5>Date Available</h5>
+											<label>From: </label><input type="text" value="YYYY-MM-DD" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'YYYY-MM-DD';}" required="">
+											<label>To: </label><input type="text" value="YYYY-MM-DD" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'YYYY-MM-DD';}" required="">
+									</div>
+									<div class="col-md-6 yourplace-grid">
+										<h5>Share with others</h5>
+										<select class="sel3">
+											<option value="">Any</option>
+											<option value="">Yes</option>
+											<option value="">No</option>
+										</select>
+									</div>
+									<div class="clearfix"></div>
 								</div>
 							
 							<div class="yourplace-grids">
@@ -322,14 +306,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</select>
 								</div>
 								<div class="col-md-6 yourplace-grid">
-									<h5>Min Beds</h5>
+									<h5>Bed Type</h5>
 									<select class="sel3">
-										<option value="">any</option>
-										<option value="">1</option>
-										<option value="">2</option>
-										<option value="">3</option>
-										<option value="">4</option>
-										<option value="">5</option>
+										<option value="">Any</option>
+										<option value="">1 Single-Bed</option>
+										<option value="">2 Single-Beds</option>
+										<option value="">1 Double-Bed</option>
 									</select>
 								</div>
 								<div class="clearfix"></div>
@@ -338,17 +320,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="col-md-6 yourplace-grid">
 									<h5>Bathroom Types</h5>
 									<select class="sel3">
-										<option value="">any</option>
-										<option value="">Common</option>
+										<option value="">Any</option>
+										<option value="">Shared</option>
 										<option value="">In-room</option>
 									</select>
 								</div>
 								<div class="col-md-6 yourplace-grid">
 									<h5>Air-conditioning</h5>
 									<select class="sel3">
-										<option value="">any</option>
-										<option value="">With air-conditioning</option>
-										<option value="">Without air-conditioning</option>
+										<option value="">Any</option>
+										<option value="">Yes</option>
+										<option value="">No</option>
 									</select>
 								</div>
 								<div class="clearfix"></div>
@@ -357,15 +339,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="col-md-6 yourplace-grid">
 										<h5>Cooking</h5>
 										<select class="sel3">
-											<option value="">any</option>
+											<option value="">Any</option>
 											<option value="">Yes</option>
 											<option value="">No</option>
 										</select>
 									</div>
 									<div class="col-md-6 yourplace-grid">
-										<h5>Prefered gender</h5>
+										<h5>Preferred gender</h5>
 										<select class="sel3">
-											<option value="">any</option>
+											<option value="">Any</option>
 											<option value="">Male</option>
 											<option value="">Female</option>
 										</select>
@@ -374,9 +356,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<div class="yourplace-grids1">
 										<div class="col-md-6 yourplace-grid">
-											<h5>Pet Friendly</h5>
+											<h5>Pet-friendly</h5>
 											<select class="sel3">
-												<option value="">any</option>
+												<option value="">Any</option>
 												<option value="">Yes</option>
 												<option value="">No</option>
 											</select>
@@ -384,7 +366,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<div class="col-md-6 yourplace-grid">
 											<h5>Share with Landlord</h5>
 											<select class="sel3">
-												<option value="">any</option>
+												<option value="">Any</option>
 												<option value="">Yes</option>
 												<option value="">No</option>
 											</select>
